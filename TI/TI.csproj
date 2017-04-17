@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6B6AA83E-3911-4AE9-AD3D-709EFF25C17A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TI</RootNamespace>
+    <AssemblyName>TI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agua.cs" />
+    <Compile Include="Apartamento.cs" />
+    <Compile Include="Balancete.cs" />
+    <Compile Include="BuscarImovel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarImovel.Designer.cs">
+      <DependentUpon>BuscarImovel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarMorador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarMorador.Designer.cs">
+      <DependentUpon>BuscarMorador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarAp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarAp.Designer.cs">
+      <DependentUpon>CadastrarAp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarCasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarCasa.Designer.cs">
+      <DependentUpon>CadastrarCasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarImovel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarImovel.Designer.cs">
+      <DependentUpon>CadastrarImovel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarMoradorGrafico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarMoradorGrafico.Designer.cs">
+      <DependentUpon>CadastrarMoradorGrafico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Casa.cs" />
+    <Compile Include="Despesa.cs" />
+    <Compile Include="EditarMorador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarMorador.Designer.cs">
+      <DependentUpon>EditarMorador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExcluirImovel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcluirImovel.Designer.cs">
+      <DependentUpon>ExcluirImovel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExcluirMorador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcluirMorador.Designer.cs">
+      <DependentUpon>ExcluirMorador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FactoryImovel.cs" />
+    <Compile Include="FactoryLeitura.cs" />
+    <Compile Include="FactoryMorador.cs" />
+    <Compile Include="Financeiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Financeiro.Designer.cs">
+      <DependentUpon>Financeiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gas.cs" />
+    <Compile Include="ILeitura.cs" />
+    <Compile Include="ImovelGrafico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImovelGrafico.Designer.cs">
+      <DependentUpon>ImovelGrafico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leitura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Leitura.Designer.cs">
+      <DependentUpon>Leitura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Locatario.cs" />
+    <Compile Include="Luz.cs" />
+    <Compile Include="Morador.cs" />
+    <Compile Include="MoradorGrafico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoradorGrafico.Designer.cs">
+      <DependentUpon>MoradorGrafico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proprietario.cs" />
+    <Compile Include="Receita.cs" />
+    <Compile Include="ReceitaGrafico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceitaGrafico.Designer.cs">
+      <DependentUpon>ReceitaGrafico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imovel.cs" />
+    <Compile Include="Relatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio.Designer.cs">
+      <DependentUpon>Relatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingletonDespesa.cs" />
+    <Compile Include="SingletonMorador.cs" />
+    <Compile Include="SingletonReceita.cs" />
+    <Compile Include="SingletonImovel.cs" />
+    <EmbeddedResource Include="BuscarImovel.resx">
+      <DependentUpon>BuscarImovel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarMorador.resx">
+      <DependentUpon>BuscarMorador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarAp.resx">
+      <DependentUpon>CadastrarAp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarCasa.resx">
+      <DependentUpon>CadastrarCasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarImovel.resx">
+      <DependentUpon>CadastrarImovel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarMoradorGrafico.resx">
+      <DependentUpon>CadastrarMoradorGrafico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarMorador.resx">
+      <DependentUpon>EditarMorador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcluirImovel.resx">
+      <DependentUpon>ExcluirImovel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcluirMorador.resx">
+      <DependentUpon>ExcluirMorador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financeiro.resx">
+      <DependentUpon>Financeiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImovelGrafico.resx">
+      <DependentUpon>ImovelGrafico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leitura.resx">
+      <DependentUpon>Leitura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoradorGrafico.resx">
+      <DependentUpon>MoradorGrafico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReceitaGrafico.resx">
+      <DependentUpon>ReceitaGrafico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio.resx">
+      <DependentUpon>Relatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
